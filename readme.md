@@ -1,6 +1,5 @@
-[![Build arp-scan](https://github.com/JaroslavHadzic/arp-scan-windows/actions/workflows/main.yml/badge.svg)](https://github.com/JaroslavHadzic/arp-scan-windows/actions/workflows/main.yml)
-
 arp-scan
+[![Build arp-scan](https://github.com/JaroslavHadzic/arp-scan-windows/actions/workflows/main.yml/badge.svg)](https://github.com/JaroslavHadzic/arp-scan-windows/actions/workflows/main.yml)
 
 ====
 
