@@ -1,0 +1,17 @@
+name: Build arp-scan
+on: [push, pull_request]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up cmake
+        run: cmake -B build -G "Unix Makefiles" -DCMAKE_C_COMPILER=gcc
+      - name: Compile application
+        run: cmake --build build
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: arp-scan.exe
+          path: build/arp-scan.exe
