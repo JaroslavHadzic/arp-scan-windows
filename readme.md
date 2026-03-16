@@ -1,7 +1,6 @@
-arp-scan
 [![Build arp-scan](https://github.com/JaroslavHadzic/arp-scan-windows/actions/workflows/main.yml/badge.svg)](https://github.com/JaroslavHadzic/arp-scan-windows/actions/workflows/main.yml)
 
-====
+# arp-scan
 
 arp-scan - windows port of the utility arp-scan, which scans a net with arp-requests and returns a table with MAC/IP matching.
 
