@@ -12,8 +12,25 @@ arp-scan - порт под Windows утилиты, которая сканиру
   gcc -O3 -o arp-scan.exe -I include src/*.c -l iphlpapi -l ws2_32 -static
   ```
 
-- Через Makefile: `make`
-  (требования - GNU Toolchain + make)
+- Через Makefile
+  (требования - GNU Toolchain + make):
+  
+  ```bash
+  make
+  ```
+
+- Через CMake -> Makefile:
+  
+  (поддерживает и другие цели cmake, но для mingw прописана статическая линковка и высокая степень оптимизации)
+  
+  (требования - cmake + любой совместимый с целями cmake компилятор, mingw, msvc, и т.д.)
+  
+  ```bash
+  mkdir build
+  cd build
+  cmake .. -G "Unix Makefiles"
+  make
+  ```
 
 Параметры командной строки
 -----
