@@ -5,7 +5,7 @@
 
 CC			= gcc
 CFLAGS		= -O3 -Wall -Wextra -pedantic -I include
-LDFLAGS		= -static
+LDFLAGS		= -static -s
 LIBS 		= -l iphlpapi -l ws2_32
 EXECUTABLE 	= arp-scan.exe
 
